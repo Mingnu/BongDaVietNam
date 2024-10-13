@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="icon" type="image/x-icon" href="./assets/img/vietnam-flag-logo.png">       
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <!-- Slick --> 
+    <link rel="stylesheet" href="./assets/slick/slick.css">
+    <!-- Slick -->  
+    <!-- Shopping cart -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
+     <!-- Shopping cart -->
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/fontawesome-free-6.1.2-web/css/all.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap-grid.min.css" integrity="sha512-8zKdCtHHn4yrmrAKteDmaIVUMppsWMTlaZCffpRG6k6sVHwWQ2kiJOFQ22e7dSPc7yYD/GC5onkJCfxemQsyeQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="./assets/style/grid.css">
+    <link rel="stylesheet" href="./assets/style/base.css"> 
+    <link rel="stylesheet" href="./assets/style/responsive.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>Trang chủ</title>
+</head>
+<body>
+    <div class="header"> 
+        <div class="header__nav-wrap"> 
+            <a href="index.html" class="header__nav-logo-link"> 
+                <img class="header__nav-logo"  src="./assets/img/logo-vn.png" alt=""> 
+            </a>
+            <ul class="header__nav">  
+                <li class="header__nav-item common-bottom-border-header">
+                    <a href="index.html" class="header__nav-link">Trang chủ</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="squad.html" class="header__nav-link">Đội hình</a>  
+                    <div class="line-up-wrap">
+                        <ul class="line-up"> 
+                            <li class="line-up__item">
+                                <a href="squad-detail-men.html" class="line-up__item-link">Nam</a>
+                            </li>
+                            <li class="line-up__item">
+                                <a href="squad-detail-women.html" class="line-up__item-link">Nữ</a>
+                            </li>
+                            <li class="line-up__item">
+                                <a href="squad-detail-young.html" class="line-up__item-link">Trẻ</a>
+                            </li>
+                            <li class="line-up__item">
+                                <a href="squad-detail-legend.html" class="line-up__item-link">Huyền thoại</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li> 
+                <li class="header__nav-item">
+                    <a href="news.html" class="header__nav-link">Tin tức</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="shop.html" class="header__nav-link">Cửa hàng</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="ticket.html" class="header__nav-link">Mua vé</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="contact.html" class="header__nav-link">Liên hệ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__sub">     
+            <a class="header__sub-link" href=""> 
+                <i class="header__sub-icon fa-solid fa-magnifying-glass"></i> 
+            </a> 
+            <a class="header__sub-link" href="">  
+                <i class="header__sub-icon fa-solid fa-cart-shopping"></i>
+            </a> 
+            <a class="header__sub-link" href=""> 
+                <i class="header__sub-icon far fa-user"></i>
+            </a> 
+            <label class="header__sub-icon header__mobile-nav fa-solid fa-list-ul" for="toggle-nav-mobile"></label>  
+            <input hidden type="checkbox" id="toggle-nav-mobile" class=" header__nav-mobile-btn"> 
+            
+            <ul class="header__nav-mobile-list close-animate-nav">
+                <li class="header__nav-mobile-item">
+                    <a href="index.html" class="header__nav-mobile-item__link">Trang chủ</a>
+                </li>
+                <li class="header__nav-mobile-item"> 
+                    <label for="toggle-nav-mobile__squad" class="header__nav-mobile-item__link">  
+                        Đội hình
+                    </label> 
+                    <input hidden type="checkbox" id="toggle-nav-mobile__squad" class="header__nav-mobile-btn__squad"> 
+                    <ul class="header__nav-mobile-list__squad">
+                        <li class="header__nav-mobile-item__squad">
+                            <a href="squad.html" class="header__nav-mobile-item__link__squad"> 
+                                Đội hình
+                            </a>
+                        </li>
+                        <li class="header__nav-mobile-item__squad">
+                            <a href="squad-detail-men.html" class="header__nav-mobile-item__link__squad"> 
+                                Nam
+                            </a>
+                        </li>
+                        <li class="header__nav-mobile-item__squad">
+                            <a href="squad-detail-women.html" class="header__nav-mobile-item__link__squad"> 
+                                Nữ
+                            </a>
+                        </li>
+                        <li class="header__nav-mobile-item__squad">
+                            <a href="squad-detail-young.html" class="header__nav-mobile-item__link__squad"> 
+                                Trẻ
+                            </a>
+                        </li>
+                        <li class="header__nav-mobile-item__squad">
+                            <a href="squad-detail-legend.html" class="header__nav-mobile-item__link__squad"> 
+                                Huyền thoại
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__nav-mobile-item">
+                    <a href="news.html" class="header__nav-mobile-item__link">Tin tức</a>
+                </li>  
+                <li class="header__nav-mobile-item">
+                    <a href="shop.html" class="header__nav-mobile-item__link">Cửa hàng</a>
+                </li>  
+                <li class="header__nav-mobile-item">
+                    <a href="ticket.html" class="header__nav-mobile-item__link">Mua vé</a>
+                </li>  
+                <li class="header__nav-mobile-item">
+                    <a href="contact.html" class="header__nav-mobile-item__link">Liên hệ</a>
+                </li>   
+                <i class=""></i>
+                <label for="toggle-nav-mobile" class="header__nav-mobile-list--close fa-solid fa-xmark"></label>
+            </ul> 
+        </div>
+    </div>  
+    <section class="home"> 
+        <div class="home-video-wrap">
+            <video class="home-video" loop muted autoplay>
+                <source src="./assets/video/video-into-1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <img class="home-video-mobile" src="./assets/img/vietnam-bg.gif" alt="">
+        </div>   
+
+        <section class="match-calender">   
+            <div class="match-heading-container">
+                <h1 class="match-heading">Lịch thi đấu</h1>
+                <div class="coundown-timer"> 
+                    <div class="countdown-app">            
+                        <div class="countdown-container">
+                            <div class="days-c time-unit">
+                                <p class="big-text" id="days">0</p> 
+                                <span>ngày</span>
+                            </div>
+                            <div class="hours-c time-unit">
+                                <p class="big-text" id="hours">0</p> 
+                                <span>giờ</span>
+                            </div>
+                            <div class="minutes-c time-unit">
+                                <p class="big-text" id="minutes">0</p> 
+                                <span>phút</span>
+                            </div>
+                            <div class="seconds-c time-unit">
+                                <p class="big-text" id="seconds">0</p> 
+                                <span>giây</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider"> 
+                <div class="match-box slider-item"> 
+                    <div class="match-box__heading"> 
+                        <div class="match-box__heading-time"> 
+                            <p class="match-box__heading-time--day-number">02</p>  
+                            <div class="match-box__heading-time-wrap">
+                                <p class="match-box__heading-time--day">thứ ba</p> 
+                                <p class="match-box__heading-time--month">tháng sáu</p>
+                            </div>
+                        </div> 
+                        <p class="match-box__heading-next-match">Trận tiếp theo</p>
+                    </div>  
+                    <div class="match-box__body">
+                        <div class="match-box__main">   
+                            <div class="match-flag">
+                                <img src="./assets/img/co-viet-nam-match.png" alt="" class="match-flag-img"> 
+                                <p class="match-flag-name">Việt Nam</p>
+                            </div> 
+                            <div class="match-infor">
+                                <p class="match-time-zone">UTC +7</p> 
+                                <p class="match-time">22:00</p> 
+                                <p class="match-stadium">Sân vận động Mỹ Đình</p> 
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/AFC_text_logo.png/1200px-AFC_text_logo.png" class="match-sponsor">
+                            </div> 
+                            <div class="match-flag">
+                                <img src="./assets/img/co-that-lan.jpg" alt="" class="match-flag-img"> 
+                                <p class="match-flag-name">Thái Lan</p>
+                            </div>  
+                        </div>
+                        <div class="match-btn-list">
+                            <button class="match-btn">Mua vé</button>
+                            <button class="match-btn">Xem thêm</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="match-box slider-item"> 
+                    <div class="match-box__heading"> 
+                        <div class="match-box__heading-time"> 
+                            <p class="match-box__heading-time--day-number">06</p>  
+                            <div class="match-box__heading-time-wrap">
+                                <p class="match-box__heading-time--day">Thứ bảy</p> 
+                                <p class="match-box__heading-time--month">Tháng sáu</p>
+                            </div>
+                        </div> 
+                        <p class="match-box__heading-next-match">Trận tiếp theo</p>
+                    </div>  
+                    <div class="match-box__body">
+                        <div class="match-box__main">   
+                            <div class="match-flag">
+                                <img src="./assets/img/co-malay.png" alt="" class="match-flag-img"> 
+                                <p class="match-flag-name">Malaysia</p>
+                            </div> 
+                            <div class="match-infor">
+                                <p class="match-time-zone">UTC +7</p> 
+                                <p class="match-time">22:00</p> 
+                                <p class="match-stadium">Sân vận động Mỹ Đình</p> 
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/AFC_text_logo.png/1200px-AFC_text_logo.png" class="match-sponsor">
+                            </div> 
+                            <div class="match-flag">
+                                <img src="./assets/img/co-viet-nam-match.png" alt="" class="match-flag-img"> 
+                                <p class="match-flag-name">Viet Nam</p>
+                            </div>  
+                        </div>
+                        <div class="match-btn-list">
+                            <button class="match-btn">Mua vé</button>
+                            <button class="match-btn">Xem thêm</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="match-box slider-item"> 
+                    <div class="match-box__heading"> 
+                        <div class="match-box__heading-time"> 
+                            <p class="match-box__heading-time--day-number">04</p>  
+                            <div class="match-box__heading-time-wrap">
+                                <p class="match-box__heading-time--day">Thứ năm</p> 
+                                <p class="match-box__heading-time--month">Tháng sáu</p>
+                            </div>
+                        </div> 
+                        <p class="match-box__heading-next-match">Trận tiếp theo</p>
+                    </div>  
+                    <div class="match-box__body">
+                        <div class="match-box__main">   
+                            <div class="match-flag">
+                                <img src="./assets/img/co-dongtimo.png" alt="" class="match-flag-img"> 
+                                <p class="match-flag-name">Timor-Leste</p>
+                            </div> 
+                            <div class="match-infor">
+                                <p class="match-time-zone">UTC +7</p> 
+                                <p class="match-time">22:00</p> 
+                                <p class="match-stadium">Sân vận động Mỹ Đình</p> 
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/AFC_text_logo.png/1200px-AFC_text_logo.png" class="match-sponsor">
+                            </div> 
+                            <div class="match-flag">
+                                <img src="./assets/img/co-viet-nam-match.png" alt="" class="match-flag-img"> 
+                                <p class="match-flag-name">Việt nam</p>
+                            </div>  
+                        </div>
+                        <div class="match-btn-list">
+                            <button class="match-btn">buy ticket</button>
+                            <button class="match-btn">see more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="match-box slider-item"> 
+                    <div class="match-box__heading"> 
+                        <div class="match-box__heading-time"> 
+                            <p class="match-box__heading-time--day-number">02</p>  
+                            <div class="match-box__heading-time-wrap">
+                                <p class="match-box__heading-time--day">Thứ ba</p> 
+                                <p class="match-box__heading-time--month">Tháng sáu</p>
+                            </div>
+                        </div> 
+                        <p class="match-box__heading-next-match">Trận tiếp theo</p>
+                    </div>  
+                    <div class="match-box__body">
+                        <div class="match-box__main">   
+                            <div class="match-flag">
+                                <img src="./assets/img/co-viet-nam-match.png" alt="" class="match-flag-img"> 
+                                <p class="match-flag-name">Việt Nam</p>
+                            </div> 
+                            <div class="match-infor">
+                                <p class="match-time-zone">UTC +7</p> 
+                                <p class="match-time">22:00</p> 
+                                <p class="match-stadium">Sân vận động Mỹ Đình</p> 
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/AFC_text_logo.png/1200px-AFC_text_logo.png" class="match-sponsor">
+                            </div> 
+                            <div class="match-flag">
+                                <img src="./assets/img/co-philip.png" alt="" class="match-flag-img"> 
+                                <p class="match-flag-name">Philippines</p>
+                            </div>  
+                        </div>
+                        <div class="match-btn-list">
+                            <button class="match-btn">Mua vé</button>
+                            <button class="match-btn">Xem thêm</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="match-box slider-item"> 
+                    <div class="match-box__heading"> 
+                        <div class="match-box__heading-time"> 
+                            <p class="match-box__heading-time--day-number">02</p>  
+                            <div class="match-box__heading-time-wrap">
+                                <p class="match-box__heading-time--day">Thứ ba</p> 
+                                <p class="match-box__heading-time--month">Tháng sáu</p>
+                            </div>
+                        </div> 
+                        <p class="match-box__heading-next-match">Trận tiếp theo</p>
+                    </div>  
+                    <div class="match-box__body">
+                        <div class="match-box__main">   
+                            <div class="match-flag">
+                                <img src="./assets/img/co-viet-nam-match.png" alt="" class="match-flag-img"> 
+                                <p class="match-flag-name">Việt Nam</p>
+                            </div> 
+                            <div class="match-infor">
+                                <p class="match-time-zone">UTC +7</p> 
+                                <p class="match-time">22:00</p> 
+                                <p class="match-stadium">Sân vận động Mỹ Đình</p> 
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/AFC_text_logo.png/1200px-AFC_text_logo.png" class="match-sponsor">
+                            </div> 
+                            <div class="match-flag">
+                                <img src="./assets/img/co-singapo.png" alt="" class="match-flag-img"> 
+                                <p class="match-flag-name">Singapore</p>
+                            </div>  
+                        </div>
+                        <div class="match-btn-list">
+                            <button class="match-btn">Mua vé</button>
+                            <button class="match-btn">Xem thêm</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="match-box slider-item"> 
+                    <div class="match-box__heading"> 
+                        <div class="match-box__heading-time"> 
+                            <p class="match-box__heading-time--day-number">02</p>  
+                            <div class="match-box__heading-time-wrap">
+                                <p class="match-box__heading-time--day">Thứ ba</p> 
+                                <p class="match-box__heading-time--month">Tháng sáu</p>
+                            </div>
+                        </div> 
+                        <p class="match-box__heading-next-match">Trận tiếp theo</p>
+                    </div>  
+                    <div class="match-box__body">
+                        <div class="match-box__main">   
+                            <div class="match-flag">
+                                <img src="./assets/img/co-myanma.png" alt="" class="match-flag-img"> 
+                                <p class="match-flag-name">Myanmar</p>
+                            </div> 
+                            <div class="match-infor">
+                                <p class="match-time-zone">UTC +7</p> 
+                                <p class="match-time">22:00</p> 
+                                <p class="match-stadium">Sân vận động Mỹ Đình</p> 
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/AFC_text_logo.png/1200px-AFC_text_logo.png" class="match-sponsor">
+                            </div> 
+                            <div class="match-flag">
+                                <img src="./assets/img/co-viet-nam-match.png" alt="" class="match-flag-img"> 
+                                <p class="match-flag-name">Việt Nam</p>
+                            </div>  
+                        </div>
+                        <div class="match-btn-list">
+                            <button class="match-btn">Mua vé</button>
+                            <button class="match-btn">Xem thêm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </section>    
+
+        <section class="news">
+            <div class="container">
+                <div class="row news-football-main-container">
+                    <div class="col-lg-6">  
+                        <div class="news-football-main fade-in" data-aos="fade-right" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-offset="100"> 
+                            <img class="news-football-main__img" src="/assets/img/news-home-image-1.jpg" alt="">
+                            <div class="news-football__content">
+                                <a class="news-football-main__heading-link" href=""> 
+                                    <h3 class="news-football-main__heading "> 
+                            
+                                        U23 Việt Nam sáng cửa đánh bại cả Thái Lan và Malaysia ở giải đấu châu Á
+                                    </h3>  
+                                  </a> 
+                                <span class="news-football-main__time">5h | Tin tức</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="news-football-main" data-aos="fade-left" 
+                        data-aos-easing="ease-in" data-aos-duration="1000" data-aos-offset="100"> 
+                            <img class="news-football-main__img" src="/assets/img/news-home-image-2.jpg" alt="">
+                            <div class="news-football__content">
+                            <a class="news-football-main__heading-link" href=""> 
+                                <h3 class="news-football-main__heading "> 
+                                    Đội tuyển nữ Việt Nam nhận tin vui từ FIFA: Giữ vững vị trí số 1 khu vực
+                                </h3>   
+                             </a> 
+                                <span class="news-football-main__time">5h | Tin tức</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container"> 
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="news-football-sub" data-aos="fade-right" 
+                        data-aos-easing="ease-in" data-aos-duration="1000" data-aos-offset="100"> 
+                            <div class="news-football-sub__img--zoom-out">
+                                <img src="./assets/img/news-home-image-3.jpg" alt="" class="news-football-sub__img"> 
+                            </div>
+                            <div class="news-football-sub__infor">
+                            <a class="news-football-sub__infor-heading-link" href=""> 
+                                <h3 class="news-football-sub__infor-heading anchor-main">
+                                    Xác định tương lai HLV đưa Việt Nam tới World Cup bóng đá nữ
+                                </h3>   
+                            </a>    
+                                <p class="news-football-sub__infor-content"> 
+                                    Sau nhiều ngày đồn đoán, tương lai của huấn luyện viên đưa Việt Nam tới World Cup bóng đá nữ 2023 đã chính thức được xác định.                                </p>  
+                                <div class="news-football-sub__infor-time-wrap">
+                                    <span class="news-football-sub__infor-time">
+                                        15h | Tin tức
+                                    </span>  
+                                    <i class="fa-solid fa-up-right-from-square news-football-sub__infor-link-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="news-football-sub" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-offset="100"> 
+                            <div class="news-football-sub__img--zoom-out">
+                                <img src="./assets/img/news-home-image-4.png" alt="" class="news-football-sub__img"> 
+                            </div>
+                            <div class="news-football-sub__infor">
+                            <a href="" class="news-football-sub__infor-heading-link">
+                                <h3 class="news-football-sub__infor-heading anchor-main">
+                                    Đội tuyển Việt Nam thắng vỡ òa, Đặng Văn Lâm nói gì trong ngày tái xuất?
+                                </h3>  
+                            </a>    
+                                <p class="news-football-sub__infor-content"> 
+                                    Ở trận đấu thuộc khuôn khổ vòng loại thứ 2 World Cup 2026 khu vực châu Á diễn ra tối 6.6, đội tuyển Việt Nam ngược dòng đánh bại Philippines với tỷ số 3-2 trên sân Mỹ Đình. Nguyễn Tiến Linh (cú đúp) và Phạm Tuấn Hải đã ghi những bàn thắng quý giá, giúp HLV Kim Sang-sik có màn ra mắt thành công ở cương vị mới.                                </p>  
+                                <div class="news-football-sub__infor-time-wrap">
+                                    <span class="news-football-sub__infor-time">
+                                        15h | Tin tức
+                                    </span>  
+                                    <i class="fa-solid fa-up-right-from-square news-football-sub__infor-link-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="news-football-sub" data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-offset="100"> 
+                            <div class="news-football-sub__img--zoom-out">
+                                <img src="./assets/img/news-home-image-5.png" alt="" class="news-football-sub__img"> 
+                            </div>
+                            <div class="news-football-sub__infor">
+                            <a href="" class="news-football-sub__infor-heading-link"> 
+                                <h3 class="news-football-sub__infor-heading anchor-main">
+                                    HLV Park Hang Seo rất giỏi
+                                </h3> 
+                            </a>    
+                                <p class="news-football-sub__infor-content"> 
+                                    Trong bài viết mới nhất về HLV Park Hang Seo với danh sách ứng viên dẫn dắt một CLB Thái Lan, tờ Siam Sport dành lời khen dành cho HLV Park Hang Seo.                                </p>  
+                                <div class="news-football-sub__infor-time-wrap">
+                                    <span class="news-football-sub__infor-time">
+                                        15h | Tin tức
+                                    </span>   
+                                    <i class="fa-solid fa-up-right-from-square news-football-sub__infor-link-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+        <section class="manager">
+            <div class="manager-container">
+                <div class="manager-container__body">
+                    <div class="manager-infor" data-aos="fade-right" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-offset="100">
+                        <h3 class="manager-heading">Huấn luyện viên</h3> 
+                        <h3 class="manager-infor__name">PARK HANG SEO</h3> 
+                        <p class="manager-infor__quote">
+                            "Khi tôi nói với bạn một chút về tầm nhìn. Đầu tiên là chúng ta phải tận dụng tối đa các nguồn lực hiện tại. Thứ hai là tạo ra một đội ngũ mạnh ở Đông Nam Á, dần dần hình thành một đội ngũ mạnh và có khả năng cạnh tranh ở Châu Á."                        </p>
+                    </div> 
+                    <img src="./assets/img/Park-hang-seo.png" alt="" class="manager-image"> 
+                    <div class="manager-result" data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-offset="100">
+                        <p class="manager-result__matches-times">
+                            Trận: 31 
+                        </p> 
+                        <div class="manager-result__matches-infor">
+                            <div class="manager-result__matches-win">
+                                Thắng: 15
+                            </div>
+                            <div class="manager-result__matches-draw">
+                                Hoà: 18
+                            </div>
+                            <div class="manager-result__matches-lose">
+                                Thua: 8
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div> 
+            <div class="container mt-5">
+            <section class="manager-infor-detail">
+                <div class="manager-infor-detail__biopraphy">  
+                    <div class="manager-infor-detail-title-wrap" data-aos="fade-right" data-aos-easing="ease-in" data-aos-duration="500" data-aos-offset="100">
+                        <div class="manager-infor-detail-title">
+                            Tiểu sử
+                        </div> 
+                        <div class="manager-infor-detail__biopraphy-content">
+                            Ngày 29 tháng 9 năm 2017, Park được bổ nhiệm làm huấn luyện viên trưởng của đội tuyển bóng đá quốc gia Việt Nam. Cũng phụ trách đội U23, đội đã lọt vào trận chung kết Giải vô địch U-23 châu Á 2018, đây là trận chung kết đầu tiên của Việt Nam trong các giải đấu chính thức của AFC. Tại Đại hội thể thao châu Á 2018, đội của ông cũng lọt vào bán kết và đứng thứ tư lần đầu tiên sau 56 năm, với Park nhận được lời khen ngợi cho cách quản lý của mình. Ngày 15 tháng 12 năm 2018, đội tuyển Việt Nam dưới thời Park đã giành chức vô địch AFF sau khi đánh bại Malaysia với tỷ số chung cuộc 3–2 trong trận lượt về chung kết tại Sân vận động quốc gia Mỹ Đình của Hà Nội. Đây là chức vô địch khu vực đầu tiên của Việt Nam sau mười năm. Với đội tuyển Olympic, Park đã giành huy chương vàng tại Đại hội thể thao Đông Nam Á 2019.                        </div>
+                    </div>
+                </div>
+                <div class="manager-infor-detail__main"> 
+                    <div class="row" data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-offset="100">
+                        <div class="col-lg-4"> 
+                            <div class="manager-infor-detail-container">
+                                <div class="manager-infor-detail-title">
+                                    Chức vụ
+                                </div>  
+                                <p class="manager-infor-detail-text">
+                                    Huấn luyện viên
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="manager-infor-detail-container">
+                                <div class="manager-infor-detail-title">
+                                    Quốc gia
+                                </div>   
+                                <div class="manager-infor-detail-text-wrap">
+                                    <img src="./assets/img/co-han-quoc.png" alt="" class="manager-infor-detail__flag">
+                                    Hàn Quốc
+                                    <p class="manager-infor-detail-text"> 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="manager-infor-detail-container">
+                                <div class="manager-infor-detail-title">
+                                    Ngày sinh
+                                </div>  
+                                <p class="manager-infor-detail-text"> 
+                                    1 Tháng 10 Năm 1957
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="manager-infor-detail-container">
+                                <div class="manager-infor-detail-title">
+                                    Đã hoạt động
+                                </div>  
+                                <p class="manager-infor-detail-text"> 
+                                    2017
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="manager-infor-detail-container">
+                                <div class="manager-infor-detail-title">
+                                    Trận đầu tiên
+                                </div>  
+                                <p class="manager-infor-detail-text"> 
+                                    9/12/2017
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="manager-infor-detail__statistics">
+                    <div class="row mt-3" data-aos="fade-right" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-offset="100">
+                        <div class="col-lg-4">
+                            <div class="manager-infor-detail-title">
+                                Thống kê nghề nghiệp
+                            </div>  
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                <p class="manager-infor-detail-text"> 
+                                    Trận: 749
+                                </p>                                    
+                                </div>
+                                <div class="col-lg-6">
+                                <p class="manager-infor-detail-text"> 
+                                    Thắng(47,53%): 356
+                                </p>                                    
+                                </div>
+                                <div class="col-lg-6">
+                                <p class="manager-infor-detail-text"> 
+                                    Hoà: 175 Thua: 218
+                                </p>                                    
+                                </div>
+                                <div class="col-lg-6">
+                                <p class="manager-infor-detail-text"> 
+                                    Danh hiệu: 09
+                                </p>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </div>
+        </section>   
+        <div class="container">
+            <section class="shopping">
+                <h1 class="common-heading">Dồ bóng đá Việt Nam</h1>
+                <div class="shopping__list">
+                    <div class="row shopping__list-item">
+                        <div class="col-lg-3 col-6">  
+                            <div class="shopping-item">
+                                <div class="shopping-item-img-wrap">
+                                    <img src="./assets/img/shirt-1-back.png" alt="">
+                                    <img src="./assets/img/shirt-1-front.png" alt=""> 
+                                </div>
+                                <div class="shopping-item__infor">
+                                    <h3 class="shopping-item__infor-name anchor-main"> 
+                                        VIETNAM Home Shirt 2021-22 day
+                                    </h3> 
+                                    <p class="shopping-item__infor-price">
+                                        $32.00
+                                    </p>
+                                </div>  
+                                <div class="shopping__option"> 
+                                    <div class="shopping__option-icon-wrap">
+                                        <i class="shopping__option-icon fa-regular fa-heart"></i>    
+                                    </div> 
+                                    <div class="shopping__option-icon-wrap"> 
+                                        <i class="shopping__option-icon material-symbols-outlined">
+                                        shopping_cart</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="col-lg-3 col-6">  
+                            <div class="shopping-item">
+                                <div class="shopping-item-img-wrap">
+                                    <img src="./assets/img/shirt-2-back.png" alt="">
+                                    <img src="./assets/img/shirt-2-front.jpg" alt=""> 
+                                </div>
+                                <div class="shopping-item__infor">
+                                    <h3 class="shopping-item__infor-name anchor-main"> 
+                                        VIETNAM Home Shirt 2021-22 
+                                    </h3> 
+                                    <p class="shopping-item__infor-price">
+                                        $32.00
+                                    </p>
+                                </div> 
+                                <div class="shopping__option"> 
+                                    <div class="shopping__option-icon-wrap">
+                                        <i class="shopping__option-icon fa-regular fa-heart"></i>    
+                                    </div> 
+                                    <div class="shopping__option-icon-wrap"> 
+                                        <i class="shopping__option-icon material-symbols-outlined">
+                                        shopping_cart</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="col-lg-3 col-6">  
+                            <div class="shopping-item">
+                                <div class="shopping-item-img-wrap">
+                                    <img src="./assets/img/shirt-3-back.png" alt="">
+                                    <img src="./assets/img/shirt-3-front.png" alt=""> 
+                                </div>
+                                <div class="shopping-item__infor">
+                                    <h3 class="shopping-item__infor-name anchor-main"> 
+                                        VIETNAM Home Shirt 2021-22 
+                                    </h3> 
+                                    <p class="shopping-item__infor-price">
+                                        $32.00
+                                    </p>
+                                </div> 
+                                <div class="shopping__option"> 
+                                    <div class="shopping__option-icon-wrap">
+                                        <i class="shopping__option-icon fa-regular fa-heart"></i>    
+                                    </div> 
+                                    <div class="shopping__option-icon-wrap"> 
+                                        <i class="shopping__option-icon material-symbols-outlined">
+                                        shopping_cart</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="col-lg-3 col-6"> 
+                            <div class="shopping-item">
+                                <div class="shopping-item-img-wrap">
+                                    <img src="./assets/img/shirt-4-back.png" alt="">
+                                    <img src="./assets/img/shirt-4-front.jpg" alt=""> 
+                                </div>
+                                <div class="shopping-item__infor">
+                                    <h3 class="shopping-item__infor-name anchor-main"> 
+                                        VIETNAM Home Shirt 2021-22 
+                                    </h3> 
+                                    <p class="shopping-item__infor-price">
+                                        $32.00
+                                    </p>
+                                </div>  
+                                <div class="shopping__option"> 
+                                    <div class="shopping__option-icon-wrap">
+                                        <i class="shopping__option-icon fa-regular fa-heart"></i>    
+                                    </div> 
+                                    <div class="shopping__option-icon-wrap"> 
+                                        <i class="shopping__option-icon material-symbols-outlined">
+                                        shopping_cart</i>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>   
+                    </div>
+                </div>
+            </section>
+        </div>  
+        <section class="feature"> 
+            <div class="feature__heading common-heading">Tin nổi bật</div>  
+            <div class="feature__body"> 
+                <img src="./assets/img/logo-vn.png" class="feature__body-logo-image"> 
+                <div class="feature__body-list owl-carousel owl-theme">
+                    <div class="feature__body-item item">
+                        <img src="./assets/img/feature-2.jpg" alt="" class="feature__body-item-img"> 
+                        <p class="feature__body-item-title">Đội tuyển Việt Nam vô địch AFF Suzuki Cup 2018 </p>
+                    </div>
+                    <div class="feature__body-item item">
+                        <img src="./assets/img/feature-1.jpg" alt="" class="feature__body-item-img"> 
+                        <p class="feature__body-item-title">Nhớ lại hành trình 'kỳ diệu' của U23 Việt Nam tại VCK U23 châu Á 2018</p>
+                    </div>
+                    <div class="feature__body-item item">
+                        <img src="./assets/img/feature-3.jpg" alt="" class="feature__body-item-img"> 
+                        <p class="feature__body-item-title">Thành tích của bóng đá Việt Nam tại SEA Games</p>
+                    </div>
+                    <div class="feature__body-item item">
+                        <img src="./assets/img/feature-4'.jpg" alt="" class="feature__body-item-img"> 
+                        <p class="feature__body-item-title">Đỗ Hùng Dũng nhận quả bóng vàng cùng vợ </p>
+                    </div>
+                    <div class="feature__body-item item">
+                        <img src="./assets/img/feature-4'.jpg" alt="" class="feature__body-item-img"> 
+                        <p class="feature__body-item-title">Đỗ Hùng Dũng nhận quả bóng vàng cùng vợ </p>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <section class="cups">
+            <div class="container"> 
+<h1 class="common-heading">Thành tích đội tuyển Quốc gia Việt Nam</h1>          
+                <div class="row mb-5">
+                    <div class="col-lg-2 col-4"> 
+                        <div class="cup-item"> 
+                            <div class="cup-item__img-wrap">
+                                <img src="./assets/img/cup-1.png" alt="" class="cup-item__img" data-aos="flip-right" 
+data-aos-easing="ease-in" data-aos-offset="100"> 
+                                <p class="cup-item__title">AFF Suzuki Cup</p>
+                            </div> 
+                            <p class="cup-item__quantity">2</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-4"> 
+                        <div class="cup-item"> 
+                            <div class="cup-item__img-wrap">
+                                <img src="./assets/img/cup2.png" alt="" class="cup-item__img" data-aos="flip-right" 
+data-aos-easing="ease-in" data-aos-offset="100"> 
+                                <p class="cup-item__title">AFF U23 Championship</p>
+                            </div> 
+                            <p class="cup-item__quantity">1</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-4"> 
+                        <div class="cup-item"> 
+                            <div class="cup-item__img-wrap">
+                                <img src="./assets/img/cup3.png" alt="" class="cup-item__img" data-aos="flip-right" 
+data-aos-easing="ease-in" data-aos-offset="100"> 
+                                <p class="cup-item__title">Seagame Gold Medal</p>
+                            </div> 
+                            <p class="cup-item__quantity">2</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-4"> 
+                        <div class="cup-item"> 
+                            <div class="cup-item__img-wrap">
+                                <img src="./assets/img/cup4.png" alt="" class="cup-item__img" data-aos="flip-right" 
+data-aos-easing="ease-in" data-aos-offset="100"> 
+                                <p class="cup-item__title">AFC U23 Championship</p>
+                            </div> 
+                            <p class="cup-item__quantity">Á quân</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-4"> 
+                        <div class="cup-item"> 
+                            <div class="cup-item__img-wrap">
+                                <img src="./assets/img/cup5.png" alt="" class="cup-item__img" data-aos="flip-right" 
+data-aos-easing="ease-in" data-aos-offset="100"> 
+                                <p class="cup-item__title">AFC Asian Cup</p>
+                            </div> 
+                            <p class="cup-item__quantity">0</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-4"> 
+                        <div class="cup-item"> 
+                            <div class="cup-item__img-wrap">
+                                <img src="./assets/img/cup7.png" alt="" class="cup-item__img" data-aos="flip-right" 
+data-aos-easing="ease-in" data-aos-offset="100"> 
+                                <p class="cup-item__title">AYA Bank Cup 2016</p>
+                            </div> 
+                            <p class="cup-item__quantity">1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section> 
+    
+    <div class="footer">
+        <div class="footer__socials">
+            <img class="header__nav-logo"  src="./assets/img/logo-vn.png" alt="">    
+            <div class="footer__socials-icon-list">
+                <div class="footer__socials-icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="footer__socials-icon">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                <div class="footer__socials-icon">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="footer__socials-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="footer__socials-icon">
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+            </div> 
+
+        </div> 
+        <div class="footer__donate">   
+            <div class="footer__donate-wrap">
+                <img class="footer__donate-img" src="./assets/img/adidas.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/acecook.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/Herbalife-Logo.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/honda.png" alt="">
+            </div>
+            <div class="footer__donate-wrap">
+                <img class="footer__donate-img" src="./assets/img/grandsport.jpg" alt="">
+                <img class="footer__donate-img" src="./assets/img/hungthinhcorporation.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/hungthinhland.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/kingcoffe-logo.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/viethan.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/vinamilk.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/yamaha.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/vingroup.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/cadbury.png" alt="">
+            </div>
+            <div class="footer__donate-wrap">
+                <img class="footer__donate-img" src="./assets/img/canon.jpg" alt="">
+                <img class="footer__donate-img" src="./assets/img/casillero.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/marriott.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/MauiGim.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/melitta.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/Mlily.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/tag.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/Visitmalta.png" alt="">
+            </div>
+        </div> 
+        <h3 class="footer__copyright">VIETNAM © 2022 ALL RIGHTS RESERVED</h3>
+    </div> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <script src="./assets/slick/slick.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
